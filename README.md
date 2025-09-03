@@ -7,10 +7,12 @@ An intelligent recipe recommendation system that uses Google Cloud Vertex AI to 
 ![Recipe Workflow Architecture](imgs/flow.png)
 
 Offline:
+
 1. All existing recipes databases are passed through an embeddings model  
 2. The embeddings are stored and indexed in a vector database to enable similarity searches
 
 At Runtime:
+
 3. Model/agent creates recipes based on the user's shopping cart and suggests additional ingredients based on popular items
 4. Generated recipes are converted into embeddings and compared against the indexed database 
 5. If the similarity score with an existing recipe reaches a predefined threshold, the recipe is considered valid and shared with the customer. Otherwise, it is deferred
