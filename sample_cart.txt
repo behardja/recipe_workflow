@@ -1,0 +1,8 @@
+{
+ "cart_list": [
+  "chicken breasts",
+  "broccoli",
+  "carrots",
+  "onion"
+ ]
+}
